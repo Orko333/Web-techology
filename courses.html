@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Курси</title>
+    <link rel="stylesheet" href="base.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="sections.css">
+    <link rel="stylesheet" href="course-card.css">
+    <link rel="stylesheet" href="schedule.css">
+    <link rel="stylesheet" href="account.css">
+    <link rel="stylesheet" href="footer.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    <div class="container">
+        <h1>Курси</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="courses.html">Курси</a></li>
+                <li><a href="schedule.html">Розклад занять</a></li>
+                <li><a href="account.html">Мій кабінет</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<section class="section-courses">
+    <div class="course-grid">
+        <!-- Основи програмування -->
+        <div class="course-card">
+            <h3>Основи програмування</h3>
+            <p><strong>Рівень:</strong> Початковий</p>
+            <p><strong>Тривалість:</strong> 4 тижні</p>
+            <p><strong>Викладач:</strong> Іван Петренко</p>
+            <button class="start-course" data-course="Основи програмування">Розпочати курс</button>
+            <button class="complete-course" data-course="Основи програмування">Курс завершено</button>
+            <button>Детальніше</button>
+        </div>
+
+        <!-- Веб-розробка -->
+        <div class="course-card">
+            <h3>Веб-розробка</h3>
+            <p><strong>Рівень:</strong> Середній</p>
+            <p><strong>Тривалість:</strong> 6 тижнів</p>
+            <p><strong>Викладач:</strong> Олена Сидорова</p>
+            <button class="start-course" data-course="Веб-розробка">Розпочати курс</button>
+            <button class="complete-course" data-course="Веб-розробка">Курс завершено</button>
+            <button>Детальніше</button>
+        </div>
+
+        <!-- Data Science -->
+        <div class="course-card">
+            <h3>Data Science</h3>
+            <p><strong>Рівень:</strong> Просунутий</p>
+            <p><strong>Тривалість:</strong> 8 тижнів</p>
+            <p><strong>Викладач:</strong> Андрій Іванов</p>
+            <button class="start-course" data-course="Data Science">Розпочати курс</button>
+            <button class="complete-course" data-course="Data Science">Курс завершено</button>
+            <button>Детальніше</button>
+        </div>
+
+
+        <!-- Машинне навчання -->
+        <div class="course-card">
+            <h3>Машинне навчання</h3>
+            <p><strong>Рівень:</strong> Просунутий</p>
+            <p><strong>Тривалість:</strong> 10 тижнів</p>
+            <p><strong>Викладач:</strong> Олексій Коваленко</p>
+            <button class="start-course" data-course="Машинне навчання">Розпочати курс</button>
+            <button class="complete-course" data-course="Машинне навчання">Курс пройдено</button>
+            <button>Детальніше</button>
+        </div>
+
+        <!-- Frontend розробка -->
+        <div class="course-card">
+            <h3>Frontend розробка</h3>
+            <p><strong>Рівень:</strong> Середній</p>
+            <p><strong>Тривалість:</strong> 6 тижнів</p>
+            <p><strong>Викладач:</strong> Марія Шевченко</p>
+            <button class="start-course" data-course="Frontend розробка">Розпочати курс</button>
+            <button class="complete-course" data-course="Frontend розробка">Курс пройдено</button>
+            <button>Детальніше</button>
+        </div>
+
+        <!-- Backend розробка -->
+        <div class="course-card">
+            <h3>Backend розробка</h3>
+            <p><strong>Рівень:</strong> Середній</p>
+            <p><strong>Тривалість:</strong> 8 тижнів</p>
+            <p><strong>Викладач:</strong> Дмитро Грищенко</p>
+            <button class="start-course" data-course="Backend розробка">Розпочати курс</button>
+            <button class="complete-course" data-course="Backend розробка">Курс пройдено</button>
+            <button>Детальніше</button>
+        </div>
+
+        <!-- Мобільна розробка -->
+        <div class="course-card">
+            <h3>Мобільна розробка</h3>
+            <p><strong>Рівень:</strong> Середній</p>
+            <p><strong>Тривалість:</strong> 8 тижнів</p>
+            <p><strong>Викладач:</strong> Наталія Лисенко</p>
+            <button class="start-course" data-course="Мобільна розробка">Розпочати курс</button>
+            <button class="complete-course" data-course="Мобільна розробка">Курс пройдено</button>
+            <button>Детальніше</button>
+        </div>
+
+        <!-- Кібербезпека -->
+        <div class="course-card">
+            <h3>Кібербезпека</h3>
+            <p><strong>Рівень:</strong> Просунутий</p>
+            <p><strong>Тривалість:</strong> 12 тижнів</p>
+            <p><strong>Викладач:</strong> Сергій Петров</p>
+            <button class="start-course" data-course="Кібербезпека">Розпочати курс</button>
+            <button class="complete-course" data-course="Кібербезпека">Курс пройдено</button>
+            <button>Детальніше</button>
+        </div>
+    </div>
+</section>
+
+<footer>
+    <div class="container">
+        <p>&copy; 2025 Платформа для навчальних курсів</p>
+    </div>
+</footer>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+        // Функція для збереження даних у localStorage
+        function saveToLocalStorage(key, data) {
+            localStorage.setItem(key, JSON.stringify(data));
+        }
+
+        // Функція для отримання даних з localStorage
+        function getFromLocalStorage(key) {
+            const data = localStorage.getItem(key);
+            return data ? JSON.parse(data) : [];
+        }
+
+        // Функція для оновлення стану картки курсу
+        function updateCourseCard(courseName, status) {
+            const courseCards = document.querySelectorAll('.course-card');
+            courseCards.forEach(card => {
+                const cardTitle = card.querySelector('h3').textContent;
+                if (cardTitle === courseName) {
+                    // Видалити всі стани (in-progress, completed)
+                    card.classList.remove('in-progress', 'completed');
+
+                    // Додати новий стан
+                    if (status === 'in-progress') {
+                        card.classList.add('in-progress');
+                    } else if (status === 'completed') {
+                        card.classList.add('completed');
+                    }
+
+                    // Перемістити картку на початок списку
+                    const courseGrid = card.parentElement;
+                    if (courseGrid.firstChild !== card) {
+                        courseGrid.insertBefore(card, courseGrid.firstChild);
+                    }
+                }
+            });
+        }
+
+        // Обробник для кнопки "Розпочати курс"
+        document.querySelectorAll('.start-course').forEach(button => {
+            button.addEventListener('click', () => {
+                const courseName = button.getAttribute('data-course');
+                const inProgressCourses = getFromLocalStorage('inProgressCourses');
+                const completedCourses = getFromLocalStorage('completedCourses');
+
+                if (!inProgressCourses.includes(courseName) && !completedCourses.includes(courseName)) {
+                    inProgressCourses.push(courseName);
+                    saveToLocalStorage('inProgressCourses', inProgressCourses);
+                    updateCourseCard(courseName, 'in-progress');
+                    alert(`Курс "${courseName}" розпочато!`);
+                } else {
+                    alert(`Курс "${courseName}" вже розпочато або завершено.`);
+                }
+            });
+        });
+
+        // Обробник для кнопки "Курс завершено"
+        document.querySelectorAll('.complete-course').forEach(button => {
+            button.addEventListener('click', () => {
+                const courseName = button.getAttribute('data-course');
+                const inProgressCourses = getFromLocalStorage('inProgressCourses');
+                const completedCourses = getFromLocalStorage('completedCourses');
+
+                if (inProgressCourses.includes(courseName)) {
+                    // Видалити курс з розпочатих
+                    const updatedInProgress = inProgressCourses.filter(course => course !== courseName);
+                    saveToLocalStorage('inProgressCourses', updatedInProgress);
+
+                    // Додати курс до пройдених
+                    if (!completedCourses.includes(courseName)) {
+                        completedCourses.push(courseName);
+                        saveToLocalStorage('completedCourses', completedCourses);
+                        updateCourseCard(courseName, 'completed');
+                        alert(`Курс "${courseName}" завершено!`);
+                    } else {
+                        alert(`Курс "${courseName}" вже завершено.`);
+                    }
+                } else {
+                    alert(`Спочатку розпочніть курс "${courseName}".`);
+                }
+            });
+        });
+
+        // Відобразити поточний стан курсів при завантаженні сторінки
+        const inProgressCourses = getFromLocalStorage('inProgressCourses');
+        const completedCourses = getFromLocalStorage('completedCourses');
+
+        inProgressCourses.forEach(courseName => updateCourseCard(courseName, 'in-progress'));
+        completedCourses.forEach(courseName => updateCourseCard(courseName, 'completed'));
+    });
+</script>
+</body>
+</html>

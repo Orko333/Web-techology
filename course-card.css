@@ -1,0 +1,129 @@
+/* Картки курсів */
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.course-card {
+    background-color: #ffffff; /* Білий фон */
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+    border: 1px solid #e0e0e0;
+    position: relative;
+}
+
+.course-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.course-card h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    color: #000000; /* Чорний колір для заголовків */
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.course-card p {
+    margin: 10px 0;
+    color: #555555;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+.course-card button {
+    align-items: center;
+    background-color: #ffffff; /* Білий фон кнопок */
+    border: 2px solid #000000; /* Чорна рамка */
+    border-radius: 8px;
+    color: #000000; /* Чорний текст */
+    cursor: pointer;
+    display: inline-flex;
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    height: 40px;
+    justify-content: center;
+    padding: 0 20px;
+    transition: background-color 0.3s ease, color 0.3s ease, transform 0.3s ease;
+    margin: 5px;
+}
+
+.course-card button:hover {
+    background-color: #000000; /* Чорний фон при наведенні */
+    color: #ffffff; /* Білий текст при наведенні */
+    transform: translateY(-2px);
+}
+
+.course-card button:focus {
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.2); /* Тінь для фокусу */
+}
+
+.course-card button:active {
+    transform: translateY(0);
+}
+
+/* Стилі для кнопки "Розпочати курс" */
+.course-card .start-course {
+    background-color: #0077b6; /* Голубий */
+    color: #ffffff; /* Білий текст */
+    border: 2px solid #0077b6; /* Голуба рамка */
+}
+
+.course-card .start-course:hover {
+    background-color: #023e8a; /* Темний голубий */
+    border-color: #023e8a;
+}
+
+/* Стилі для кнопки "Курс завершено" */
+.course-card .complete-course {
+    background-color: #d90429; /* Червоний */
+    color: #ffffff; /* Білий текст */
+    border: 2px solid #d90429; /* Червона рамка */
+}
+
+.course-card .complete-course:hover {
+    background-color: #9d0208; /* Темний червоний */
+    border-color: #9d0208;
+}
+
+/* Стилі для курсу "В процесі" */
+.course-card.in-progress {
+    background-color: #caf0f8; /* Світло-голубий */
+}
+
+.course-card.in-progress::after {
+    content: "В процесі";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #0077b6; /* Голубий */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+/* Стилі для завершеного курсу */
+.course-card.completed {
+    background-color: #ffccd5; /* Світло-червоний */
+}
+
+.course-card.completed::after {
+    content: "Завершено";
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background-color: #d90429; /* Червоний */
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 500;
+}
