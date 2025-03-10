@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="schedule.css">
     <link rel="stylesheet" href="account.css">
     <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="modal.css">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Montserrat:wght@700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -38,10 +39,13 @@
             <p><strong>Викладач:</strong> Іван Петренко</p>
             <button class="start-course" data-course="Основи програмування">Розпочати курс</button>
             <button class="complete-course" data-course="Основи програмування">Курс завершено</button>
-            <button>Детальніше</button>
+            <button class="details-button"
+                    data-description="Цей курс навчить вас основам програмування на Python. Ви дізнаєтеся про змінні, цикли, умовні оператори та функції."
+                    data-syllabus='["Введення в Python", "Змінні та типи даних", "Умовні оператори", "Цикли", "Функції"]'>
+                Детальніше
+            </button>
         </div>
 
-        <!-- Веб-розробка -->
         <div class="course-card">
             <h3>Веб-розробка</h3>
             <p><strong>Рівень:</strong> Середній</p>
@@ -49,10 +53,13 @@
             <p><strong>Викладач:</strong> Олена Сидорова</p>
             <button class="start-course" data-course="Веб-розробка">Розпочати курс</button>
             <button class="complete-course" data-course="Веб-розробка">Курс завершено</button>
-            <button>Детальніше</button>
+            <button class="details-button"
+                    data-description="Цей курс охоплює основи веб-розробки, включаючи HTML, CSS та JavaScript. Ви створите свій перший веб-сайт."
+                    data-syllabus='["Введення в HTML", "Основи CSS", "JavaScript для початківців", "Створення адаптивних сайтів"]'>
+                Детальніше
+            </button>
         </div>
 
-        <!-- Data Science -->
         <div class="course-card">
             <h3>Data Science</h3>
             <p><strong>Рівень:</strong> Просунутий</p>
@@ -60,66 +67,98 @@
             <p><strong>Викладач:</strong> Андрій Іванов</p>
             <button class="start-course" data-course="Data Science">Розпочати курс</button>
             <button class="complete-course" data-course="Data Science">Курс завершено</button>
-            <button>Детальніше</button>
+            <button class="details-button"
+                    data-description="Цей курс навчить вас основам Data Science, включаючи роботу з даними, аналіз та візуалізацію за допомогою Python."
+                    data-syllabus='["Введення в Data Science", "Робота з Pandas", "Візуалізація даних", "Машинне навчання"]'>
+                Детальніше
+            </button>
         </div>
 
-
-        <!-- Машинне навчання -->
         <div class="course-card">
             <h3>Машинне навчання</h3>
             <p><strong>Рівень:</strong> Просунутий</p>
             <p><strong>Тривалість:</strong> 10 тижнів</p>
             <p><strong>Викладач:</strong> Олексій Коваленко</p>
             <button class="start-course" data-course="Машинне навчання">Розпочати курс</button>
-            <button class="complete-course" data-course="Машинне навчання">Курс пройдено</button>
-            <button>Детальніше</button>
+            <button class="complete-course" data-course="Машинне навчання">Курс завершено</button>
+            <button class="details-button"
+                    data-description="Цей курс охоплює основи машинного навчання, включаючи алгоритми, моделі та їх застосування в реальних проектах."
+                    data-syllabus='["Введення в ML", "Класифікація", "Регресія", "Глибоке навчання"]'>
+                Детальніше
+            </button>
         </div>
 
-        <!-- Frontend розробка -->
         <div class="course-card">
             <h3>Frontend розробка</h3>
             <p><strong>Рівень:</strong> Середній</p>
             <p><strong>Тривалість:</strong> 6 тижнів</p>
             <p><strong>Викладач:</strong> Марія Шевченко</p>
             <button class="start-course" data-course="Frontend розробка">Розпочати курс</button>
-            <button class="complete-course" data-course="Frontend розробка">Курс пройдено</button>
-            <button>Детальніше</button>
+            <button class="complete-course" data-course="Frontend розробка">Курс завершено</button>
+            <button class="details-button"
+                    data-description="Цей курс навчить вас створювати сучасні веб-інтерфейси за допомогою HTML, CSS та JavaScript, а також використовувати фреймворки, такі як React."
+                    data-syllabus='["Основи HTML/CSS", "JavaScript для Frontend", "React для початківців", "Робота з API"]'>
+                Детальніше
+            </button>
         </div>
 
-        <!-- Backend розробка -->
         <div class="course-card">
             <h3>Backend розробка</h3>
             <p><strong>Рівень:</strong> Середній</p>
             <p><strong>Тривалість:</strong> 8 тижнів</p>
             <p><strong>Викладач:</strong> Дмитро Грищенко</p>
             <button class="start-course" data-course="Backend розробка">Розпочати курс</button>
-            <button class="complete-course" data-course="Backend розробка">Курс пройдено</button>
-            <button>Детальніше</button>
+            <button class="complete-course" data-course="Backend розробка">Курс завершено</button>
+            <button class="details-button"
+                    data-description="Цей курс навчить вас створювати серверну частину веб-додатків за допомогою Node.js та Express, а також працювати з базами даних."
+                    data-syllabus='["Введення в Node.js", "Робота з Express", "Бази даних (SQL/NoSQL)", "Розгортання додатків"]'>
+                Детальніше
+            </button>
         </div>
 
-        <!-- Мобільна розробка -->
         <div class="course-card">
             <h3>Мобільна розробка</h3>
             <p><strong>Рівень:</strong> Середній</p>
             <p><strong>Тривалість:</strong> 8 тижнів</p>
             <p><strong>Викладач:</strong> Наталія Лисенко</p>
             <button class="start-course" data-course="Мобільна розробка">Розпочати курс</button>
-            <button class="complete-course" data-course="Мобільна розробка">Курс пройдено</button>
-            <button>Детальніше</button>
+            <button class="complete-course" data-course="Мобільна розробка">Курс завершено</button>
+            <button class="details-button"
+                    data-description="Цей курс навчить вас створювати мобільні додатки для Android та iOS за допомогою Flutter."
+                    data-syllabus='["Введення в Flutter", "Інтерфейси в Flutter", "Робота з API", "Публікація додатків"]'>
+                Детальніше
+            </button>
         </div>
 
-        <!-- Кібербезпека -->
         <div class="course-card">
             <h3>Кібербезпека</h3>
             <p><strong>Рівень:</strong> Просунутий</p>
             <p><strong>Тривалість:</strong> 12 тижнів</p>
             <p><strong>Викладач:</strong> Сергій Петров</p>
             <button class="start-course" data-course="Кібербезпека">Розпочати курс</button>
-            <button class="complete-course" data-course="Кібербезпека">Курс пройдено</button>
-            <button>Детальніше</button>
+            <button class="complete-course" data-course="Кібербезпека">Курс завершено</button>
+            <button class="details-button"
+                    data-description="Цей курс охоплює основи кібербезпеки, включаючи захист мереж, шифрування та аналіз загроз."
+                    data-syllabus='["Введення в кібербезпеку", "Захист мереж", "Шифрування даних", "Аналіз загроз"]'>
+                Детальніше
+            </button>
         </div>
     </div>
 </section>
+
+<!-- Додаємо модальне вікно для кожного курсу -->
+<div id="course-details-modal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal">&times;</span>
+        <h3 id="modal-course-title"></h3>
+        <p id="modal-course-description"></p>
+        <p><strong>Рівень:</strong> <span id="modal-course-level"></span></p>
+        <p><strong>Тривалість:</strong> <span id="modal-course-duration"></span></p>
+        <p><strong>Викладач:</strong> <span id="modal-course-instructor"></span></p>
+        <p><strong>Програма курсу:</strong></p>
+        <ul id="modal-course-syllabus"></ul>
+    </div>
+</div>
 
 <footer>
     <div class="container">
@@ -216,6 +255,76 @@
 
         inProgressCourses.forEach(courseName => updateCourseCard(courseName, 'in-progress'));
         completedCourses.forEach(courseName => updateCourseCard(courseName, 'completed'));
+    });
+    document.addEventListener('DOMContentLoaded', () => {
+        const modal = document.getElementById('course-details-modal');
+        const closeModalBtn = document.querySelector('.close-modal');
+
+        // Функція для відкриття модального вікна
+        function openModal(course) {
+            // Заповнюємо модальне вікно даними
+            document.getElementById('modal-course-title').textContent = course.title;
+            document.getElementById('modal-course-description').textContent = course.description;
+            document.getElementById('modal-course-level').textContent = course.level;
+            document.getElementById('modal-course-duration').textContent = course.duration;
+            document.getElementById('modal-course-instructor').textContent = course.instructor;
+
+            // Очищаємо попередній список програми курсу
+            const syllabusList = document.getElementById('modal-course-syllabus');
+            syllabusList.innerHTML = '';
+
+            // Додаємо нові пункти програми курсу
+            course.syllabus.forEach(item => {
+                const li = document.createElement('li');
+                li.textContent = item;
+                syllabusList.appendChild(li);
+            });
+
+            // Відображаємо модальне вікно з анімацією
+            modal.style.display = 'flex';
+            setTimeout(() => {
+                modal.classList.remove('fadeOutBlur'); // Видаляємо клас закриття (якщо він був)
+                modal.classList.add('fadeInBlur'); // Додаємо клас для анімації відкриття
+            }, 10); // Невелика затримка для коректного запуску анімації
+        }
+
+        // Функція для закриття модального вікна
+        function closeModal() {
+            modal.classList.remove('fadeInBlur'); // Видаляємо клас відкриття
+            modal.classList.add('fadeOutBlur'); // Додаємо клас для анімації закриття
+
+            // Ховаємо модальне вікно після завершення анімації
+            setTimeout(() => {
+                modal.style.display = 'none';
+            }, 800); // Затримка відповідає тривалості анімації
+        }
+
+        // Обробник для кнопки "Детальніше"
+        document.querySelectorAll('.details-button').forEach(button => {
+            button.addEventListener('click', () => {
+                // Отримуємо дані про курс з атрибутів кнопки
+                const courseCard = button.closest('.course-card');
+                const course = {
+                    title: courseCard.querySelector('h3').textContent,
+                    description: button.getAttribute('data-description'),
+                    level: courseCard.querySelector('p:nth-of-type(1)').textContent.replace('Рівень: ', ''),
+                    duration: courseCard.querySelector('p:nth-of-type(2)').textContent.replace('Тривалість: ', ''),
+                    instructor: courseCard.querySelector('p:nth-of-type(3)').textContent.replace('Викладач: ', ''),
+                    syllabus: JSON.parse(button.getAttribute('data-syllabus')) // Отримуємо програму курсу
+                };
+                openModal(course); // Відкриваємо модальне вікно
+            });
+        });
+
+        // Закриття модального вікна при натисканні на кнопку закриття
+        closeModalBtn.addEventListener('click', closeModal);
+
+        // Закриття модального вікна при кліку поза ним
+        window.addEventListener('click', (event) => {
+            if (event.target === modal) {
+                closeModal();
+            }
+        });
     });
 </script>
 </body>
